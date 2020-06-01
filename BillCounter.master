@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BillCounter.master.cs" Inherits="BillCounter" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/theme.css" />
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" />
+        <script src="lib/jquery-1.7.2.min.js" type="text/javascript"></script>
+        <script src="lib/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
+        <script language="javascript" type="text/javascript">window.history.forward();</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+      <form id="form2" runat="server">
+     <asp:ScriptManager EnablePartialRendering="true" ID="ScriptManager1" runat="server"></asp:ScriptManager>
+      
+    <div>
+    <div class="navbar">
+        <div class="navbar-inner">
+              <a class="brand" href=""><span style="font-size: x-small; font-family: Arial, Helvetica, sans-serif;"><asp:Label ID="lblLoggedinAs" runat="server" Text="Label"></asp:Label></span></a>
+        </div>
+    </div>
+     <div class="sidebar-nav">
+         <a href="" class="nav-header" ></a>
+        
+		<div id="Bill" runat="server">
+        <a href="#setup-menu" class="nav-header collapsed" data-toggle="collapse"><i class="icon-upload" style="font-size: 16px; color:#e116c4"></i>Bill</a>
+        <ul id="setup-menu" class="nav nav-list collapse">
+            <li ><a href="completebill.aspx">Complete</a></li>
+			<li ><a href="QuaterDuplicateBill.aspx">Duplicate</a></li>
+			<li><a href="CounterBill.aspx">Rebate</a></li>
+            <li ><a href="CounterCurrentOnly.aspx">Current Only</a></li>
+            <li ><a href="CounterArrearsBill.aspx">Arrears Only</a></li>
+			<li><a href="CounterSpecialQuater.aspx">20 Day Duplicate</a></li>
+			<li ><a href="CounterSpecial20.aspx">20 Days Complete Bill</a></li>
+			<li ><a href="CounterSpecialBill30.aspx">30 Days Complete Bill</a></li>
+			<li ><a href="CounterSpecialBill40.aspx">40 Days Complete Bill</a></li>
+			
+            
+        </ul>
+      </div>
+	  
+	   <div id="adv" runat="server">
+        <a href="#setup-menu8" class="nav-header collapsed" data-toggle="collapse"><i class="icon-upload" style="font-size: 16px; color:#e116c4"></i>Advance</a>
+        <ul id="setup-menu8" class="nav nav-list collapse">
+            <li ><a href="CounterAdvance2.aspx">1 Quarter</a></li>
+            <li ><a href="CounterAdvance3.aspx">2 Quarter</a></li>
+			<li ><a href="CounterAnual.aspx">Annual</a></li>
+			<li ><a href="CounterAdvance5.aspx">5 Quater</a></li>
+			<li ><a href="CounterAdvance6.aspx">6 Quater</a></li>
+        </ul>
+      </div>
+        
+		<div id="pay" runat="server">
+        <a href="#setup-menu1" class="nav-header collapsed" data-toggle="collapse"><i class="icon-search" style="font-size: 16px; color:#e116c4"></i>Selective Searching</a>
+        <ul id="setup-menu1" class="nav nav-list collapse">
+            <li ><a href="CounterSearch.aspx">Searching</a></li>
+            <li ><a href="CounterPaymentHistory.aspx">Payment History</a></li>
+			<li ><a href="CounterPostingVoucher.aspx">Posting</a></li>
+           
+        </ul>
+      </div>
+		
+         <div id="Report" runat="server">
+        <a href="#setup-menu2" class="nav-header collapsed" data-toggle="collapse"><i class="icon-cogs" style="font-size: 16px; color:#e116c4"></i>Report</a>
+        <ul id="setup-menu2" class="nav nav-list collapse">
+            <li ><a href="CounterConsumerst.aspx">Consumer Statment</a></li>
+            <li ><a href="Counterdailycollection.aspx">Daily Collection</a></li>
+            <li ><a href="CounterQuaterWise.aspx">Quarter Collection</a></li>
+			<li ><a href="CounterUCCollectionReport.aspx">UC Wise Quarter Collection</a></li>
+        </ul>
+      </div>
+          <div id="logout" runat="server">
+            <a href="logout.aspx" class="nav-header" ><i class="icon-signout" style="font-size: 16px; color:#e116c4"></i>Sign Out</a>
+       </div>
+     </div>
+    
+    <div class="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        <div class="container-fluid">
+            <div class="row-fluid">
+            </div>
+            </div>
+        </asp:ContentPlaceHolder>
+    </div>
+            
+    </div>
+    
+    </form>
+</body>
+</html>
