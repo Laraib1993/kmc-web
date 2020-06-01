@@ -35,7 +35,7 @@
         <a href="#setup-menu9" class="nav-header collapsed" data-toggle="collapse"><i class="icon-upload" style="font-size: 16px; color:#e116c4"></i>MUCT Bill</a>
         <ul id="setup-menu9" class="nav nav-list collapse">
             <li ><a href="duplicatebillMUCTBill.aspx">Complete</a></li>
-			
+			<li><a href="quaterbillMUCTBill.aspx">Quater</a></li>
 			<li><a href="rebatebillMUCTBill.aspx">Rebate</a></li>
             <li ><a href="current_onlyMUCTBill.aspx">Current Only</a></li>
             <li ><a href="arrearsbillMUCTBill.aspx">Arrears Only</a></li>
