@@ -77,7 +77,7 @@ Partial Class advance3
             rpt.Load(Server.MapPath("~/reports/advancebill3.rpt"))
             Dim conInfo As New ConnectionInfo
             With conInfo
-                .ServerName = "WIN-CFJNVMD2S5P"
+                .ServerName = "WIN-H4F4JGGN50A"
                 .DatabaseName = "kmc"
                 .UserID = "sa"
                 .Password = "Sprint@5555"

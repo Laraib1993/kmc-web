@@ -61,7 +61,7 @@ public partial class CounterAdvance6 : System.Web.UI.Page
             ConnectionInfo conInfo = new ConnectionInfo();
             {
                 var withBlock = conInfo;
-                withBlock.ServerName = "WIN-CFJNVMD2S5P";
+                withBlock.ServerName = "WIN-H4F4JGGN50A";
                 withBlock.DatabaseName = "kmc";
                 withBlock.UserID = "sa";
                 withBlock.Password = "Sprint@5555";

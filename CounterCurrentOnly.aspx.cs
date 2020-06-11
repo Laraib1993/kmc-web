@@ -61,7 +61,7 @@ public partial class CounterCurrentOnly : System.Web.UI.Page
             {
                 var withBlock = conInfo;
               //  withBlock.ServerName = "WIN-7V1OQFPKUAJ";
-                withBlock.ServerName = "WIN-CFJNVMD2S5P";
+                withBlock.ServerName = "WIN-H4F4JGGN50A";
                 withBlock.DatabaseName = "kmc";
                 withBlock.UserID = "sa";
                 withBlock.Password = "Sprint@5555";

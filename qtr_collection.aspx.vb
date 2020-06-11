@@ -39,7 +39,7 @@ Partial Class qtr_collection
         rpt.Load(Server.MapPath("~/reports/quarter_wise.rpt"))
         Dim conInfo As New ConnectionInfo
         With conInfo
-            .ServerName = "WIN-CFJNVMD2S5P"
+            .ServerName = "WIN-H4F4JGGN50A"
             .DatabaseName = "kmc"
             .UserID = "sa"
             .Password = "Sprint@5555"
